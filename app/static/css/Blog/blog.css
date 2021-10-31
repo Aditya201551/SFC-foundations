@@ -497,15 +497,14 @@ header button .icon-box .fa {
 }
 
 @media (max-width: 600px) {
-
   .blogs .row .blogimg img {
-    width:35vw;
+    width: 35vw;
     height: 15vh;
     flex: 1 1 40rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
-  .blogs .row .blogimg{
+  .blogs .row .blogimg {
     padding-top: 35%;
   }
 
@@ -706,35 +705,29 @@ svg {
   color: black;
 }
 
-
-
-.dropdown{
+.dropdown {
   float: right;
   margin-right: 5vmin;
 }
 
-.dropdown option{
+.dropdown option {
   font-size: 2vmin;
   background-color: white;
   color: black;
 }
 
-select{
+select {
   background-color: rgb(250, 196, 48);
   width: 15vmin;
   font-size: 2vmin;
   padding: 1vmin;
 }
 
-
-
 @media only screen and (max-width: 800px) {
   .blogs .row .blogbox {
     width: 10vmin;
     display: inline;
   }
-
-
 
   blogs .row .blogbox {
     /* display: inline-flexbox; */
@@ -767,7 +760,6 @@ select{
     flex: 1 1 40rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-
   }
 
   .blogs .row .blogname {
@@ -792,5 +784,4 @@ select{
   .blogs .row .blogbtn {
     text-align: right;
   }
-
 }

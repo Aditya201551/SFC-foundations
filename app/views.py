@@ -83,8 +83,8 @@ def vatavaran(request):
 
 class BlogListView(ListView):
     model=BlogPost
-    template_name='pages/Blog/blog_list2.html'
-    paginate_by=12
+    template_name='pages/Blog/blogList.html'
+    paginate_by=1
     ordering=['-id']
 
     def get_context_data(self, *args, **kwargs):
@@ -118,7 +118,7 @@ def BlogDetailView(request,pk):
 class NewsListView(ListView):
     model = New
     template_name = 'pages/news/news.html'
-    paginate_by = 12
+    paginate_by = 1
     ordering = ['-date']
 
     def get_context_data(self, *args, **kwargs):
@@ -138,7 +138,7 @@ class NewsDetailView(DetailView):
 class EventListView(ListView):
     model=Event
     template_name='pages/Events/events.html'
-    paginate_by = 12
+    paginate_by = 1
     ordering = ['-date']
     def get_context_data(self, *args, **kwargs):
         try:

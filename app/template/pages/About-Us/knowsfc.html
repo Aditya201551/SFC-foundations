@@ -33,7 +33,7 @@
 
     <header>
 
-        <a href="#" class="logo"><img src="{% static 'images/logo-img.png' %}" alt=""></a>
+        <a href="{%url 'index'%}" class="logo"><img src="{% static 'images/logo-img.png' %}" alt=""></a>
         <div id="menu-bar" class="fas fa-hamburger"></div>
         <nav class="navbar">
             <ul>
@@ -427,7 +427,7 @@
         </script>
         <script src="{% static 'js/About-Us/coreteam.js' %}"></script>
         <script>
-                       $(){$('#menu-bar').click(function(){
+                       $();{$('#menu-bar').click(function(){
                 $(this).toggleClass('fa-times');
                 $('.navbar').toggleClass('nav-toggle');
             });
