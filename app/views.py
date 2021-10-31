@@ -117,7 +117,7 @@ def BlogDetailView(request,pk):
 
 class NewsListView(ListView):
     model = New
-    template_name = 'pages/news/news.html'
+    template_name = 'pages/news/newsLists.html'
     paginate_by = 1
     ordering = ['-date']
 
@@ -137,7 +137,7 @@ class NewsDetailView(DetailView):
 
 class EventListView(ListView):
     model=Event
-    template_name='pages/Events/events.html'
+    template_name='pages/Events/eventLists.html'
     paginate_by = 1
     ordering = ['-date']
     def get_context_data(self, *args, **kwargs):

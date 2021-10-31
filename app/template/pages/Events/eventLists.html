@@ -37,15 +37,15 @@
         <div id="menu-bar" class="fas fa-hamburger"></div>
         <nav class="navbar">
             <ul>
-            <li><a href="/#home">Home</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#projects">Projects</a></li>
-                <li><a href="/#joinus">Join Us</a></li>
-                <li><a href="/#events">Events</a></li>
-                <li><a href="/#news">News</a></li>
+                 <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'index' %}#about">About</a></li>
+                <li><a href="{% url 'index' %}#projects">Projects</a></li>
+                <li><a href="{% url 'join' %}">Join Us</a></li>
+                <li><a href="#" class="active">Events</a></li>
+                <li><a href="{% url 'news' %}">News</a></li>
                 <li><a href="{% url 'contact' %}">Contact us</a></li>
-                <li><a href="{% url 'blog' %}">Blogs</a></li>
-                <li><a href="{% url 'BlogDonate' %}">DONATE</a></li>
+                <li> <a href="{% url 'blog' %}">Blogs</a></li>
+                <li><a href="#DONATE">DONATE</a></li>
                 <li id="darkmodeli"><input type="checkbox" id="toggle" name="checkbox" class="switch" onclick="myfun()">
                 </li>
             </ul>
@@ -66,7 +66,7 @@
     <div class="projects">
         <h1 class="heading">EVENTS</h1>
 
-        <div>
+        <!-- <div>
             <button class="btn" id="sort" onclick="myfunction()">Sort By</button>
         </div>
         <div class=" sortby hidden" id="sortby">
@@ -75,7 +75,7 @@
             <button class="btn">Education</button>
             <button class="btn">Environment</button>
             <button class="btn">Social Awareness</button>
-        </div>
+        </div> -->
 
 
 

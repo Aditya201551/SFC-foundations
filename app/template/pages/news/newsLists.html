@@ -39,11 +39,11 @@
         <nav class="navbar">
             <ul>
                  <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'index' %}">About</a></li>
-                <li><a href="{% url 'index' %}">Projects</a></li>
+                <li><a href="{% url 'index' %}#about">About</a></li>
+                <li><a href="{% url 'index' %}#projects">Projects</a></li>
                 <li><a href="{% url 'join' %}">Join Us</a></li>
                 <li><a href="{% url 'event' %}">Events</a></li>
-                <li class="active"><a href="#">News</a></li>
+                <li><a class="active" href="#">News</a></li>
                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                 <li> <a href="{% url 'blog' %}">Blogs</a></li>
                 <li><a href="#DONATE">DONATE</a></li>
@@ -69,7 +69,7 @@
             <div class="row" data-aos="fade-right">
 
   {% for news in page_obj %}
-                <!-- BLOG 1 -->
+                <!-- Dynamic list of news -->
                 <div class="blogbox  line-content">
                     <div class="blogcontent">
                         <div class="blogimg"><img src="{{news.image.url}}">
